@@ -1,4 +1,5 @@
 #prova
+#prova2
 
 #This is a simple function for plotting on a file. Once you have the object "plot",
 #you pass it as an argument together with width, heigth and the name of the file where do you want to plot.
