@@ -27,9 +27,12 @@ as.turbulence.matrix <- function(data){
   return(turb)
 }
 
-# as.turbulence.default <- function(u, v, w, t){
-#   if(length(u)!=length(v) | length(u)!=length(w) | length(u)!=length(t)
-#       | length(v)!=length(w) | length(v)!=length(t) | length(w)!=length(t)){
-#         stop('Error, lengths differ')
-#       }
-# }
+# Default method: probably we can optimize the control on the length
+as.turbulence.default <- function(x, y, z, time){
+  # If length of the elements passed differs, returns error (you must have the same number of data)
+  if(length(u)!=length(v) | length(u)!=length(w) | length(u)!=length(t)
+      | length(v)!=length(w) | length(v)!=length(t) | length(w)!=length(t)){
+        stop('Error, lengths differ')
+      }
+  turb <- turbulence(u=x, v=y, w=z, t=time)
+}
