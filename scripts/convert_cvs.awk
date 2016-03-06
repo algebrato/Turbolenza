@@ -1,5 +1,7 @@
 #!/usr/bin/awk -f
 
+#Algebrato Fork
+
 ##
 ##Parser inline for data reduction. Convert the raw style data in CSV format.  
 ##Usage: ./convert_cvs.awk inputfilename.dat > outputfilename.dat
